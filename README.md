@@ -40,3 +40,42 @@ This repository provides Terraform configurations to set up a static website hos
 Create your own index.html file and error.html for testing the website.
 The main.tf file configures an S3 bucket with public read access and enables static website hosting.
 Ensure that your AWS credentials are configured correctly and have the necessary permissions to create and manage S3 resources.
+
+
+# Terraform S3 Static Website Hosting
+
+This Terraform configuration sets up an S3 bucket to host a static website with public access and error handling.
+
+## Resources
+
+### `aws_s3_bucket`
+- Creates an S3 bucket for static website hosting.
+
+### `aws_s3_bucket_ownership_controls`
+- Ensures objects in the S3 bucket are owned by the bucket owner.
+
+### `aws_s3_bucket_public_access_block`
+- Allows public access by disabling default AWS restrictions.
+
+### `aws_s3_bucket_acl`
+- Grants `public-read` access to the S3 bucket.
+
+### `aws_s3_bucket_object`
+- Uploads `index.html` and `error.html` to the S3 bucket.
+
+### `aws_s3_bucket_website_configuration`
+- Configures the bucket for static website hosting, specifying the index and error documents.
+
+### `output`
+- Displays the static website URL after the deployment is completed.
+
+## Usage
+
+1. Ensure you have Terraform installed and configured with your AWS credentials.
+2. Run `terraform init` to initialize the Terraform configuration.
+3. Run `terraform apply` to create the S3 bucket and deploy your static website.
+4. After the deployment, Terraform will output the URL of your static website.
+
+## Example Output
+
+
