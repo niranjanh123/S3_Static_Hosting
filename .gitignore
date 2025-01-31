@@ -1,0 +1,22 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+terraform.tfvars
+terraform.tfvars.json
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Static site build artifacts
+node_modules/
+dist/
+*.zip
+*.tar.gz
+
