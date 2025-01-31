@@ -69,13 +69,8 @@ This Terraform configuration sets up an S3 bucket to host a static website with 
 ### `output`
 - Displays the static website URL after the deployment is completed.
 
-## Usage
-
-1. Ensure you have Terraform installed and configured with your AWS credentials.
-2. Run `terraform init` to initialize the Terraform configuration.
-3. Run `terraform apply` to create the S3 bucket and deploy your static website.
-4. After the deployment, Terraform will output the URL of your static website.
-
 ## Example Output
+![S3 static 1](https://github.com/user-attachments/assets/fd0f1b61-9c2d-4ee2-a8f0-bd6fcbb15cc7)
+
 
 
