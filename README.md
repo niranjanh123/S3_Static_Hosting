@@ -70,7 +70,10 @@ This Terraform configuration sets up an S3 bucket to host a static website with 
 - Displays the static website URL after the deployment is completed.
 
 ## Example Output
+
 ![S3 static 1](https://github.com/user-attachments/assets/fd0f1b61-9c2d-4ee2-a8f0-bd6fcbb15cc7)
+
+![S3 static 2](https://github.com/user-attachments/assets/ee3b1cdd-781e-4c7d-a381-a944af2ed494)
 
 
 
